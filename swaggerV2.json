@@ -1691,11 +1691,19 @@
                         "name": "importInfo",
                         "in": "body",
                         "description": "The import to post",
-                        "required": true,
+                        "required": false,
                         "schema": {
                             "$ref": "#/definitions/ImportInfo"
                         }
-                    }
+                    },
+                    {
+						"name": "pbixFile",
+						"in": "formData",
+						"description": "PBIX to upload",
+						"required": false,
+						"type": "file"
+					}
+
                 ],
                 "responses": {
                     "200": {
@@ -4554,11 +4562,18 @@
                         "name": "importInfo",
                         "in": "body",
                         "description": "The import to post",
-                        "required": true,
+                        "required": false,
                         "schema": {
                             "$ref": "#/definitions/ImportInfo"
                         }
-                    }
+                    },
+                    {
+						"name": "pbixFile",
+						"in": "formData",
+						"description": "PBIX to upload",
+						"required": false,
+						"type": "file"
+					}
                 ],
                 "responses": {
                     "200": {
